@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-10">
+        <div class="bg-white bg-opacity-80 backdrop-blur-md rounded-3xl shadow-2xl p-12 max-w-4xl mx-auto border border-white border-opacity-50">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">Track and Reduce Your Carbon Footprint</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-700 font-medium">EcoTrack makes it easy to measure your impact, learn actionable tips, and see your progress over time.</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="/calculator.html" class="rounded-xl px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">Start Calculating</a>
+                <a href="/tips.html" class="rounded-xl px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">Explore Tips</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6">
+        <div class="feature-grid">
+            <a href="/calculator.html" class="bg-white bg-opacity-90 backdrop-blur-sm border border-green-200 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center block hover:border-green-400">
+                <div class="text-5xl mb-4 animate-bounce-slow">🧮</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Simple Calculator</h3>
+                <p class="text-gray-600">Estimate weekly CO2e from your car & bike travel, flights, and diet.</p>
+            </a>
+            <a href="/profile.html" class="bg-white bg-opacity-90 backdrop-blur-sm border border-blue-200 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center block hover:border-blue-400">
+                <div class="text-5xl mb-4 animate-spin-slow">📈</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Track Progress</h3>
+                <p class="text-gray-600">Save your results (when logged in) and visualize improvements.</p>
+            </a>
+            <a href="/tips.html" class="bg-white bg-opacity-90 backdrop-blur-sm border border-green-200 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center block hover:border-green-400">
+                <div class="text-5xl mb-4 animate-bounce-slow">🌿</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Actionable Tips</h3>
+                <p class="text-gray-600">Discover practical ways to lower emissions and live sustainably.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="section-sm bg-white bg-opacity-60 backdrop-blur-sm border-t border-gray-200">
+        <div class="container text-center text-gray-700">
+            <p>© <span id="year"></span> EcoTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <script src="assets/script.js"></script>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </div>
+</body>
+</html>

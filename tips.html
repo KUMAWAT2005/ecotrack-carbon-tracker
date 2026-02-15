@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Tips</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <style>
+        .tip-card {
+            transition: all 0.3s ease;
+        }
+        .tip-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.2);
+        }
+        .category-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="min-h-screen bg-gradient-to-b from-green-50 to-white">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-16 px-4">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-4">Eco Tips & Tricks 🌿</h1>
+                <p class="text-xl text-green-100">Practical ways to reduce your carbon footprint and live sustainably</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="container mx-auto px-4 py-16">
+            <!-- Introduction -->
+            <section class="mb-16 text-center max-w-3xl mx-auto">
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    Small changes in your daily habits can make a big difference for the environment. Explore our collection of practical tips across different areas of your life to reduce your carbon footprint and contribute to a more sustainable future.
+                </p>
+            </section>
+
+            <!-- Tips Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tip 1: Transport -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🚗</span>
+                        <span class="category-badge bg-blue-100 text-blue-700">Transport</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Choose Sustainable Mobility</h3>
+                    <p class="text-gray-600 mb-4">Use public transport, carpool, or cycle when possible. Combine errands to reduce trips and save fuel.</p>
+                    <div class="text-sm text-blue-600 font-semibold">💡 Impact: Reduce CO₂ by up to 50%</div>
+                </div>
+
+                <!-- Tip 2: Diet -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-green-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🥗</span>
+                        <span class="category-badge bg-green-100 text-green-700">Diet</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Plant-Forward Eating</h3>
+                    <p class="text-gray-600 mb-4">Opt for plant-forward meals several times a week. Buy seasonal, local produce and reduce food waste.</p>
+                    <div class="text-sm text-green-600 font-semibold">💡 Impact: Reduce CO₂ by up to 30%</div>
+                </div>
+
+                <!-- Tip 3: Home -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-orange-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🏠</span>
+                        <span class="category-badge bg-orange-100 text-orange-700">Home</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Energy Efficiency</h3>
+                    <p class="text-gray-600 mb-4">Switch to LEDs, unplug idle electronics, improve insulation, and seal drafts for better efficiency.</p>
+                    <div class="text-sm text-orange-600 font-semibold">💡 Impact: Reduce CO₂ by up to 40%</div>
+                </div>
+
+                <!-- Tip 4: Shopping -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-purple-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🛍️</span>
+                        <span class="category-badge bg-purple-100 text-purple-700">Shopping</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Buy Less, Choose Well</h3>
+                    <p class="text-gray-600 mb-4">Choose durable, repairable products. Buy second-hand and bring reusable bags and bottles.</p>
+                    <div class="text-sm text-purple-600 font-semibold">💡 Impact: Reduce waste by 60%</div>
+                </div>
+
+                <!-- Tip 5: Water -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-cyan-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">💧</span>
+                        <span class="category-badge bg-cyan-100 text-cyan-700">Water</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Conserve Water Daily</h3>
+                    <p class="text-gray-600 mb-4">Fix leaks promptly, take shorter showers, use efficient machines, and collect rainwater for plants.</p>
+                    <div class="text-sm text-cyan-600 font-semibold">💡 Impact: Save 30,000+ liters/year</div>
+                </div>
+
+                <!-- Tip 6: Waste -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-red-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">♻️</span>
+                        <span class="category-badge bg-red-100 text-red-700">Waste</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Reduce, Reuse, Recycle</h3>
+                    <p class="text-gray-600 mb-4">Compost organic waste, avoid single-use plastics, repair items, and properly sort recyclables.</p>
+                    <div class="text-sm text-red-600 font-semibold">💡 Impact: Divert 75% from landfills</div>
+                </div>
+
+                <!-- Tip 7: Energy -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-yellow-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">⚡</span>
+                        <span class="category-badge bg-yellow-100 text-yellow-700">Energy</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Smart Energy Use</h3>
+                    <p class="text-gray-600 mb-4">Use programmable thermostats, air-dry clothes, choose efficient appliances, and turn off lights.</p>
+                    <div class="text-sm text-yellow-600 font-semibold">💡 Impact: Reduce CO₂ by 35%</div>
+                </div>
+
+                <!-- Tip 8: Technology -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">💻</span>
+                        <span class="category-badge bg-indigo-100 text-indigo-700">Technology</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Digital Sustainability</h3>
+                    <p class="text-gray-600 mb-4">Extend device lifespan, use cloud storage efficiently, enable power-saving modes, and recycle electronics.</p>
+                    <div class="text-sm text-indigo-600 font-semibold">💡 Impact: Reduce e-waste by 50%</div>
+                </div>
+
+                <!-- Tip 9: Food -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-pink-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🍽️</span>
+                        <span class="category-badge bg-pink-100 text-pink-700">Food</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Minimize Food Waste</h3>
+                    <p class="text-gray-600 mb-4">Plan meals ahead, store food properly, use leftovers creatively, and support local farmers.</p>
+                    <div class="text-sm text-pink-600 font-semibold">💡 Impact: Reduce CO₂ by 25%</div>
+                </div>
+
+                <!-- Tip 10: Travel -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-teal-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">✈️</span>
+                        <span class="category-badge bg-teal-100 text-teal-700">Travel</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Eco-Friendly Travel</h3>
+                    <p class="text-gray-600 mb-4">Choose trains over flights for short distances, pack light, stay in eco-friendly accommodations.</p>
+                    <div class="text-sm text-teal-600 font-semibold">💡 Impact: Reduce CO₂ by 90%</div>
+                </div>
+
+                <!-- Tip 11: Lifestyle -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-lime-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🌱</span>
+                        <span class="category-badge bg-lime-100 text-lime-700">Lifestyle</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Sustainable Habits</h3>
+                    <p class="text-gray-600 mb-4">Support green businesses, participate in cleanups, plant trees, and educate others about environment.</p>
+                    <div class="text-sm text-lime-600 font-semibold">💡 Impact: Inspire community change</div>
+                </div>
+
+                <!-- Tip 12: Community -->
+                <div class="tip-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-rose-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-5xl">🤝</span>
+                        <span class="category-badge bg-rose-100 text-rose-700">Community</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Share & Inspire</h3>
+                    <p class="text-gray-600 mb-4">Share your eco-journey with friends, join environmental groups, and advocate for sustainable policies.</p>
+                    <div class="text-sm text-rose-600 font-semibold">💡 Impact: Multiply your impact</div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <section class="mt-20 text-center">
+                <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-2xl shadow-lg p-12">
+                    <h2 class="text-4xl font-bold mb-4">Start Your Eco-Journey Today</h2>
+                    <p class="text-xl text-green-100 mb-8">Track your carbon footprint and see the impact of your sustainable choices</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <a href="calculator.html" class="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition shadow-lg">
+                            Calculate Footprint
+                        </a>
+                        <a href="profile.html" class="bg-green-700 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-800 transition shadow-lg border-2 border-white">
+                            View Your Progress
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+{
+  "name": "ecotrack-v2",
+  "version": "2.0.0",
+  "description": "Personal Carbon Footprint Tracker - Full Stack Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "setup-db": "node backend/db/setup.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.16.0",
+    "nodemailer": "^7.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "carbon",
+    "footprint",
+    "environment",
+    "tracker",
+    "sustainability"
+  ],
+  "author": "EcoTrack Team",
+  "license": "MIT"
+}

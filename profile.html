@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="container section">
+        <!-- Profile Header -->
+        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-8 rounded-2xl shadow-xl mb-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">Welcome Back! 👋</h1>
+                    <p class="text-green-100 text-lg"><span class="font-semibold" id="profileName"></span></p>
+                    <p class="text-green-100"><span id="profileEmail"></span></p>
+                </div>
+                <div class="text-6xl">🌱</div>
+            </div>
+        </div>
+
+        <!-- Statistics Cards -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Your Statistics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-2 border-green-200 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm font-semibold uppercase tracking-wide">Total This Month</p>
+                            <p class="text-4xl font-bold text-green-600 mt-3" id="totalThisMonth">0 kg</p>
+                        </div>
+                        <div class="text-5xl">📊</div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-2 border-blue-200 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm font-semibold uppercase tracking-wide">Average Per Day</p>
+                            <p class="text-4xl font-bold text-blue-600 mt-3" id="averagePerDay">0 kg</p>
+                        </div>
+                        <div class="text-5xl">📈</div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border-2 border-orange-200 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm font-semibold uppercase tracking-wide">Total Entries</p>
+                            <p class="text-4xl font-bold text-orange-600 mt-3" id="totalEntries">0</p>
+                        </div>
+                        <div class="text-5xl">📝</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Chart -->
+        <section class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-green-100 p-8 rounded-2xl shadow-xl mb-6">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-2">
+                <span>📈 Progress Over Time</span>
+            </h2>
+            <div class="h-80">
+                <canvas id="historyChart" class="w-full h-full"></canvas>
+            </div>
+        </section>
+
+        <!-- Daily Breakdown Chart -->
+        <section class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-green-100 p-8 rounded-2xl shadow-xl mb-6">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-2">
+                <span>📊 Daily Breakdown</span>
+            </h2>
+            <div class="h-96">
+                <canvas id="dailyChart" class="w-full h-full"></canvas>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-green-100 p-8 rounded-2xl shadow-xl">
+            <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2 mb-6">
+                <span>📋 History</span>
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-green-50 to-green-100 border-b-2 border-green-200">
+                            <th class="py-4 px-4 text-gray-800 font-bold">Date</th>
+                            <th class="py-4 px-4 text-gray-800 font-bold">Total Emissions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody" class="text-gray-700"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    </div>
+    <script src="assets/script.js"></script>
+    <script type="module">
+        import { RealtimeIntegration } from './assets/js/realtime-integration.js';
+        
+        // Enable real-time updates for profile page
+        RealtimeIntegration.enableProfileRealTime();
+    </script>
+</body>
+</html>
+
+
+
+
